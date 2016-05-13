@@ -23,7 +23,6 @@
 #   - get the value of the matrix
 #   - set the value of the inverse matrix
 #   - get the value of the inverse matrix
-
 makeCacheMatrix <- function(x = matrix()){
     i <- NULL
     set <- function(y) {
@@ -41,10 +40,8 @@ makeCacheMatrix <- function(x = matrix()){
     )
 }
 
-
 # Calculate the inverse of the special "matrix" created with the above
 # function, reusing cached result if it is available
-
 cacheSolve <- function(x, ...) {
     i <- x$getinverse()
     if(!is.null(i)) {
